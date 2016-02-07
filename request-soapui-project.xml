@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5dd4af52-6e81-4658-b4ed-e515669ebdd3" activeEnvironment="Default" name="ProjectTestCase" resourceRoot="" soapui-version="5.2.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="9d4a1397-c287-469d-b3c3-a1452c9938c0" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://localhost:8080" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://localhost:8080</con:endpoint></con:endpoints><con:resource name="CalculateAsync" path="/impressionCalculator/calculateAsync" id="8547d43a-ca04-4142-a4de-e6a0788a42de"><con:settings/><con:parameters/><con:method name="CalculateAsync" id="c8d004be-63b6-4c03-ad2e-94d64f43185e" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=ISO-8859-1</con:mediaType><con:status>415 404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/><con:element xmlns:cal="http://localhost/impressionCalculator/calculateAsync">cal:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cal="http://localhost/impressionCalculator/calculateAsync">cal:Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>202</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>204</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Example 1" id="9a2e496d-36cf-4142-9070-5609f526746b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+   "mounthImpressionQuantity":50000000,
+   "inputImpressionDatas":[
+      {
+         "clientName":"Test1",
+         "impressionInCampaignQuantity":1,
+         "campaignPrice":0
+      },
+      {
+         "clientName":"Test2",
+         "impressionInCampaignQuantity":2,
+         "campaignPrice":2
+      },
+      {
+         "clientName":"Test3",
+         "impressionInCampaignQuantity":3,
+         "campaignPrice":2
+      },
+      {
+         "clientName":"Test4",
+         "impressionInCampaignQuantity":70000,
+         "campaignPrice":71000
+      },
+      {
+         "clientName":"Test5",
+         "impressionInCampaignQuantity":49000000,
+         "campaignPrice":50000000
+      }
+   ]
+}</con:request><con:originalUri>http://localhost/impressionCalculator/calculateAsync</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request><con:request name="Example 2" id="bda479ee-9a18-4e57-9dd8-8d78714f3512" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://localhost:8080</con:endpoint><con:request>{
+   "mounthImpressionQuantity":2000000000,
+   "inputImpressionDatas":[
+      {
+         "clientName":"Test1",
+         "impressionInCampaignQuantity":1000000,
+         "campaignPrice":5000
+      },
+      {
+         "clientName":"Test2",
+         "impressionInCampaignQuantity":2000000,
+         "campaignPrice":9000
+      },
+      {
+         "clientName":"Test3",
+         "impressionInCampaignQuantity":3000000,
+         "campaignPrice":20000
+      }
+   ]
+}</con:request><con:originalUri>http://localhost/impressionCalculator/calculateAsync</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
