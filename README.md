@@ -147,7 +147,7 @@ In dropwizard you can implement a server [health checks](https://dropwizard.gith
 
 To check a server health check use GET http method and this address:
 ```bash
-curl -i localhost:808/healthcheck
+curl -i localhost:8081/healthcheck
 ```
 Output is:
 ```
